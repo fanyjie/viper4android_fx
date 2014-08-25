@@ -1,67 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="cpu_platform_fx">
-        <item>Без VFP (PXA920)</item>
-        <item>С VFP</item>
-        <item>CortexA8 с NEON</item>
-        <item>CortexA9/15 с NEON</item>
+    <string-array name="drvinst_prefer">
+        <item>Высокое качество</item>
+        <item>Стандартное качество</item>
+        <item>Энергосбережение</item>
     </string-array>
-    <string-array name="cpu_platform_fx_values">
-        <item>libv4a_fx_ics_NOVFP.so</item>
-        <item>libv4a_fx_ics_VFP.so</item>
-        <item>libv4a_fx_ics_CortexA8.so</item>
-        <item>libv4a_fx_ics_CortexA9.so</item>
+    <string-array name="drvinst_prefer_values">
+        <item>sq</item>
+        <item>hq</item>
+        <item>lq</item>
     </string-array>
-    <string-array name="cpu_platform_xhifi">
-        <item>NVIDIA Tegra2</item>
-        <item>CortexAx with NEON</item>
+    <string-array name="ui_prefer">
+        <item>Новичок</item>
+        <item>Опытный</item>
+        <item>Эксперт</item>
     </string-array>
-    <string-array name="cpu_platform_xhifi_values">
-        <item>libv4a_xhifi_ics_T2.so</item>
-        <item>libv4a_xhifi_ics_NEON.so</item>
+    <string-array name="ui_prefer_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
     <string-array name="compatible_mode">
-        <item>Нормальный</item>
-        <item>Совместимый</item>
+        <item>Нет</item>
+        <item>Включить</item>
     </string-array>
     <string-array name="compatible_mode_values">
-        <item>глобально</item>
-        <item>локально</item>
+        <item>global</item>
+        <item>local</item>
     </string-array>
     <string-array name="colorfulmusic_coeffs">
-        <item>Слабый</item>
-        <item>Средний</item>
-        <item>Максимальный</item>
+        <item>Минимум</item>
+        <item>Уровень 1</item>
+        <item>Уровень 2</item>
+        <item>Уровень 3</item>
+        <item>Уровень 4</item>
+        <item>Уровень 5</item>
+        <item>Уровень 6</item>
+        <item>Уровень 7</item>
+        <item>Максимум</item>
     </string-array>
-	<string-array name="colorfulmusic_coeffs_values">
+    <string-array name="colorfulmusic_coeffs_values">
         <item>120;200</item>
+        <item>130;275</item>
+        <item>140;350</item>
+        <item>150;425</item>
         <item>160;500</item>
+        <item>170;575</item>
+        <item>180;650</item>
+        <item>190;725</item>
         <item>200;800</item>
     </string-array>
     <string-array name="colorfulmusic_midimage">
-        <item>Слабый</item>
-        <item>Средний</item>
-        <item>Максимальный</item>
+        <item>Минимум</item>
+        <item>Уровень 1</item>
+        <item>Уровень 2</item>
+        <item>Уровень 3</item>
+        <item>Уровень 4</item>
+        <item>Уровень 5</item>
+        <item>Уровень 6</item>
+        <item>Уровень 7</item>
+        <item>Уровень 8</item>
+        <item>Уровень 9</item>
+        <item>Максимум</item>
     </string-array>
-	 <string-array name="colorfulmusic_midimage_values">
+    <string-array name="colorfulmusic_midimage_values">
         <item>100</item>
+        <item>110</item>
         <item>120</item>
+        <item>130</item>
+        <item>140</item>
         <item>150</item>
+        <item>160</item>
+        <item>170</item>
+        <item>180</item>
+        <item>190</item>
+        <item>200</item>
+    </string-array>
+    <string-array name="conv_cross_channel">
+        <item>0 процентов</item>
+        <item>5 процентов</item>
+        <item>10 процентов</item>
+        <item>15 процентов</item>
+        <item>20 процентов</item>
+        <item>25 процентов</item>
+        <item>30 процентов</item>
+        <item>35 процентов</item>
+        <item>40 процентов</item>
+        <item>45 процентов</item>
+        <item>50 процентов</item>
+        <item>55 процентов</item>
+        <item>60 процентов</item>
+        <item>70 процентов</item>
+        <item>80 процентов</item>
+    </string-array>
+    <string-array name="conv_cross_channel_values">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+    </string-array>
+    <string-array name="diffsurround_delay">
+        <item>2 мс</item>
+        <item>5 мс</item>
+        <item>8 мс</item>
+        <item>10 мс</item>
+        <item>12 мс</item>
+        <item>14 мс</item>
+        <item>16 мс</item>
+        <item>18 мс</item>
+        <item>20 мс</item>
+    </string-array>
+    <string-array name="diffsurround_delay_values">
+        <item>200</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1200</item>
+        <item>1400</item>
+        <item>1600</item>
+        <item>1800</item>
+        <item>2000</item>
     </string-array>
     <string-array name="reverb_roomsize">
-        <item>25м2</item>
-        <item>36м2</item>
-        <item>49м2</item>
-        <item>64м2</item>
-        <item>81м2</item>
-        <item>100м2</item>
-        <item>121м2</item>
-        <item>203м2</item>
-        <item>347м2</item>
-        <item>652м2</item>
-        <item>1200м2</item>
+        <item>25 м²</item>
+        <item>36 м²</item>
+        <item>49 м²</item>
+        <item>64 м²</item>
+        <item>81 м²</item>
+        <item>100 м²</item>
+        <item>121 м²</item>
+        <item>203 м²</item>
+        <item>347 м²</item>
+        <item>652 м²</item>
+        <item>1200 м²</item>
     </string-array>
-	    <string-array name="reverb_roomsize_values">
+    <string-array name="reverb_roomsize_values">
         <item>0</item>
         <item>10</item>
         <item>20</item>
@@ -75,19 +159,19 @@
         <item>100</item>
     </string-array>
     <string-array name="reverb_roomwidth">
-        <item>5м</item>
-        <item>6м</item>
-        <item>7м</item>
-        <item>8м</item>
-        <item>9м</item>
-        <item>10м</item>
-        <item>11м</item>
-        <item>14м</item>
-        <item>19м</item>
-        <item>26м</item>
-        <item>36м</item>
+        <item>5 м</item>
+        <item>6 м</item>
+        <item>7 м</item>
+        <item>8 м</item>
+        <item>9 м</item>
+        <item>10 м</item>
+        <item>11 м</item>
+        <item>14 м</item>
+        <item>19 м</item>
+        <item>26 м</item>
+        <item>36 м</item>
     </string-array>
-	 <string-array name="reverb_roomwidth_values">
+    <string-array name="reverb_roomwidth_values">
         <item>0</item>
         <item>10</item>
         <item>20</item>
@@ -101,19 +185,19 @@
         <item>100</item>
     </string-array>
     <string-array name="reverb_percent">
-        <item>0 Процентов</item>
-        <item>10 Процентов</item>
-        <item>20 Процентов</item>
-        <item>30 Процентов</item>
-        <item>40 Процентов</item>
-        <item>50 Процентов</item>
-        <item>60 Процентов</item>
-        <item>70 Процентов</item>
-        <item>80 Процентов</item>
-        <item>90 Процентов</item>
-        <item>100 Процентов</item>
+        <item>0 процентов</item>
+        <item>10 процентов</item>
+        <item>20 процентов</item>
+        <item>30 процентов</item>
+        <item>40 процентов</item>
+        <item>50 процентов</item>
+        <item>60 процентов</item>
+        <item>70 процентов</item>
+        <item>80 процентов</item>
+        <item>90 процентов</item>
+        <item>100 процентов</item>
     </string-array>
-	<string-array name="reverb_percent_values">
+    <string-array name="reverb_percent_values">
         <item>0</item>
         <item>10</item>
         <item>20</item>
@@ -126,7 +210,7 @@
         <item>90</item>
         <item>100</item>
     </string-array>
-	 <string-array name="equalizer_preset_modes">
+    <string-array name="equalizer_preset_modes">
         <item>@string/eq_preset_acoustic</item>
         <item>@string/eq_preset_bass_booster</item>
         <item>@string/eq_preset_bass_reducer</item>
@@ -154,32 +238,38 @@
         <item>0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;4.0;6.5;</item>
         <item>0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;-6.5;-4.0;</item>
         <item>-2.5;-2.5;0.0;0.0;0.0;0.0;0.6;3.5;1.5;-2.0;</item>
-        <item>Пользовательский</item>
+        <item>custom</item>
     </string-array>
     <string-array name="cure_crossfeed">
-        <item>Слабый</item>
+        <item>Минимум</item>
         <item>Средний</item>
-        <item>Максимальный</item>
+        <item>Максимум</item>
     </string-array>
-	<string-array name="cure_crossfeed_values">
+    <string-array name="cure_crossfeed_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
     <string-array name="vhs_qual">
-        <item>Нормальное</item>
-        <item>Высокое</item>
+        <item>Маленький зал</item>
+        <item>Небольшой зал</item>
+        <item>Средний зал</item>
+        <item>Большой зал</item>
+        <item>Огромный зал</item>
     </string-array>
-	 <string-array name="vhs_qual_values">
+    <string-array name="vhs_qual_values">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
     <string-array name="playbackgain_ratio">
-        <item>Слабый</item>
+        <item>Минимум</item>
         <item>Средний</item>
-        <item>Максимальный</item>
+        <item>Максимум</item>
     </string-array>
-	<string-array name="playbackgain_ratio_values">
+    <string-array name="playbackgain_ratio_values">
         <item>50</item>
         <item>100</item>
         <item>300</item>
@@ -195,9 +285,9 @@
         <item>8x</item>
         <item>9x</item>
         <item>10x</item>
-        <item>Бесконечно</item>
+        <item>∞</item>
     </string-array>
-	<string-array name="multi_factor_values">
+    <string-array name="multi_factor_values">
         <item>100</item>
         <item>200</item>
         <item>300</item>
@@ -212,15 +302,15 @@
     </string-array>
     <string-array name="amplification_db">
         <item>0 дБ</item>
-        <item>3.5 дБ</item>
-        <item>6.0 дБ</item>
-        <item>9.5 дБ</item>
-        <item>12.0 дБ</item>
-        <item>14.0 дБ</item>
-        <item>18.0 дБ</item>
-        <item>20.0 дБ</item>
+        <item>3,5 дБ</item>
+        <item>6,0 дБ</item>
+        <item>9,5 дБ</item>
+        <item>12,0 дБ</item>
+        <item>14,0 дБ</item>
+        <item>18,0 дБ</item>
+        <item>20,0 дБ</item>
     </string-array>
-	 <string-array name="amplification_db_values">
+    <string-array name="amplification_db_values">
         <item>100</item>
         <item>150</item>
         <item>200</item>
@@ -232,13 +322,13 @@
     </string-array>
     <string-array name="output_db">
         <item>0 дБ</item>
-        <item>-1.0 дБ</item>
-        <item>-1.9 дБ</item>
-        <item>-3.0 дБ</item>
-        <item>-6.0 дБ</item>
-        <item>-10.5 дБ</item>
+        <item>-1,0 дБ</item>
+        <item>-1,9 дБ</item>
+        <item>-3,0 дБ</item>
+        <item>-6,0 дБ</item>
+        <item>-10,5 дБ</item>
     </string-array>
-	  <string-array name="output_db_values">
+    <string-array name="output_db_values">
         <item>100</item>
         <item>90</item>
         <item>80</item>
@@ -247,30 +337,30 @@
         <item>30</item>
     </string-array>
     <string-array name="output_volume">
-        <item>6.0 дБ</item>
-        <item>5.6 дБ</item>
-        <item>5.1 дБ</item>
-        <item>4.6 дБ</item>
-        <item>4.1 дБ</item>
-        <item>3.5 дБ</item>
-        <item>2.9 дБ</item>
-        <item>2.3 дБ</item>
-        <item>1.6 дБ</item>
-        <item>0.8 дБ</item>
+        <item>6,0 дБ</item>
+        <item>5,6 дБ</item>
+        <item>5,1 дБ</item>
+        <item>4,6 дБ</item>
+        <item>4,1 дБ</item>
+        <item>3,5 дБ</item>
+        <item>2,9 дБ</item>
+        <item>2,3 дБ</item>
+        <item>1,6 дБ</item>
+        <item>0,8 дБ</item>
         <item>0 дБ</item>
-        <item>-1.0 дБ</item>
-        <item>-1.9 дБ</item>
-        <item>-3.0 дБ</item>
-        <item>-4.4 дБ</item>
-        <item>-6.0 дБ</item>
-        <item>-8.0 дБ</item>
-        <item>-10.5 дБ</item>
-        <item>-14.0 дБ</item>
-        <item>-20.0 дБ</item>
-        <item>-26.0 дБ</item>
-        <item>-40.0 дБ</item>
+        <item>-1,0 дБ</item>
+        <item>-1,9 дБ</item>
+        <item>-3,0 дБ</item>
+        <item>-4,4 дБ</item>
+        <item>-6,0 дБ</item>
+        <item>-8,0 дБ</item>
+        <item>-10,5 дБ</item>
+        <item>-14,0 дБ</item>
+        <item>-20,0 дБ</item>
+        <item>-26,0 дБ</item>
+        <item>-40,0 дБ</item>
     </string-array>
-	 <string-array name="output_volume_values">
+    <string-array name="output_volume_values">
         <item>200</item>
         <item>190</item>
         <item>180</item>
@@ -294,44 +384,67 @@
         <item>5</item>
         <item>1</item>
     </string-array>
-    <string-array name="dynamicsystem_bass">
-        <item>0 Процентов</item>
-        <item>1 Процентов</item>
-        <item>2 Процентов</item>
-        <item>3 Процентов</item>
-        <item>4 Процентов</item>
-        <item>5 Процентов</item>
-        <item>6 Процентов</item>
-        <item>7 Процентов</item>
-        <item>8 Процентов</item>
-        <item>9 Процентов</item>
-        <item>10 Процентов</item>
-        <item>12 Процентов</item>
-        <item>14 Процентов</item>
-        <item>16 Процентов</item>
-        <item>18 Процентов</item>
-        <item>20 Процентов</item>
-        <item>22 Процентов</item>
-        <item>24 Процентов</item>
-        <item>26 Процентов</item>
-        <item>28 Процентов</item>
-        <item>30 Процентов</item>
-        <item>33 Процентов</item>
-        <item>36 Процентов</item>
-        <item>40 Процентов</item>
-        <item>45 Процентов</item>
-        <item>50 Процентов</item>
-        <item>55 Процентов</item>
-        <item>60 Процентов</item>
-        <item>70 Процентов</item>
-        <item>80 Процентов</item>
-        <item>90 Процентов</item>
-        <item>100 Процентов</item>
-        <item>120 Процентов</item>
-        <item>150 Процентов</item>
-        <item>200 Процентов</item>
+    <string-array name="channel_pan">
+        <item>1,0 : 0,0</item>
+        <item>0,9 : 0,1</item>
+        <item>0,8 : 0,2</item>
+        <item>0,7 : 0,3</item>
+        <item>0,6 : 0,4</item>
+        <item>0,5 : 0,5</item>
+        <item>0,4 : 0,6</item>
+        <item>0,3 : 0,7</item>
+        <item>0,2 : 0,8</item>
+        <item>0,1 : 0,9</item>
+        <item>0,0 : 1,0</item>
     </string-array>
-	<string-array name="dynamicsystem_bass_values">
+    <string-array name="channel_pan_values">
+        <item>-100</item>
+        <item>-80</item>
+        <item>-60</item>
+        <item>-40</item>
+        <item>-20</item>
+        <item>0</item>
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="dynamicsystem_bass">
+        <item>0 процентов</item>
+        <item>1 процент</item>
+        <item>2 процента</item>
+        <item>3 процента</item>
+        <item>4 процента</item>
+        <item>5 процентов</item>
+        <item>6 процентов</item>
+        <item>7 процентов</item>
+        <item>8 процентов</item>
+        <item>9 процентов</item>
+        <item>10 процентов</item>
+        <item>12 процентов</item>
+        <item>14 процентов</item>
+        <item>16 процентов</item>
+        <item>18 процентов</item>
+        <item>20 процентов</item>
+        <item>22 процента</item>
+        <item>24 процента</item>
+        <item>26 процентов</item>
+        <item>28 процентов</item>
+        <item>30 процентов</item>
+        <item>33 процента</item>
+        <item>36 процентов</item>
+        <item>40 процентов</item>
+        <item>45 процентов</item>
+        <item>50 процентов</item>
+        <item>55 процентов</item>
+        <item>60 процентов</item>
+        <item>70 процентов</item>
+        <item>80 процентов</item>
+        <item>90 процентов</item>
+        <item>100 процентов</item>
+    </string-array>
+    <string-array name="dynamicsystem_bass_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -364,32 +477,29 @@
         <item>80</item>
         <item>90</item>
         <item>100</item>
-        <item>120</item>
-        <item>150</item>
-        <item>200</item>
     </string-array>
     <string-array name="dynamicsystem_outputs">
-        <item>Экстрим наушники(v2)</item>
-        <item>Качественные наушники(v2)</item>
-        <item>Обычные наушники(v2)</item>
-        <item>Средненькие наушники(v2)</item>
-        <item>Обычная гарнитура(v2)</item>
-        <item>Экстрим наушники(v1)</item>
-        <item>Качественные наушники(v1)</item>
-        <item>Обычные наушники(v1)</item>
-        <item>Обычная гарнитура(v1)</item>
+        <item>Отличные наушники 2</item>
+        <item>Хорошие наушники 2</item>
+        <item>Обычные наушники 2</item>
+        <item>Простые наушники 2</item>
+        <item>Обычная гарнитура 2</item>
+        <item>Отличные наушники 1</item>
+        <item>Хорошие наушники 1</item>
+        <item>Обычные наушники 1</item>
+        <item>Обычная гарнитура 1</item>
         <item>Гарнитура Apple</item>
         <item>Гарнитура Monster</item>
         <item>Гарнитура Moto</item>
         <item>Гарнитура Philips</item>
         <item>SHP2000</item>
         <item>SHP9000</item>
-        <item>Неизвестный тип I</item>
-        <item>Неизвестный тип II</item>
-        <item>Неизвестный тип III</item>
-        <item>Неизвестный тип IV</item>
+        <item>Условный тип 1</item>
+        <item>Условный тип 2</item>
+        <item>Условный тип 3</item>
+        <item>Условный тип 4</item>
     </string-array>
-	<string-array name="dynamicsystem_outputs_values">
+    <string-array name="dynamicsystem_outputs_values">
         <item>140;6200;40;60;10;80</item>
         <item>180;5800;55;80;10;70</item>
         <item>300;5600;60;105;10;50</item>
@@ -410,6 +520,98 @@
         <item>1000;6200;80;140;0;0</item>
         <item>800;6200;80;140;0;0</item>
     </string-array>
+    <string-array name="vbass_mode">
+        <item>Естественный</item>
+        <item>Очищенный</item>
+        <item>Сабвуферный</item>
+    </string-array>
+    <string-array name="vbass_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="vbass_freq">
+        <item>30 Гц</item>
+        <item>40 Гц</item>
+        <item>50 Гц</item>
+        <item>60 Гц</item>
+        <item>66 Гц</item>
+        <item>78 Гц</item>
+        <item>80 Гц</item>
+        <item>100 Гц</item>
+    </string-array>
+    <string-array name="vbass_freq_values">
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>66</item>
+        <item>78</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="vbass_boost">
+        <item>3,5 дБ</item>
+        <item>6,0 дБ</item>
+        <item>8,0 дБ</item>
+        <item>10,0 дБ</item>
+        <item>11,0 дБ</item>
+        <item>12,0 дБ</item>
+        <item>13,0 дБ</item>
+        <item>14,0 дБ</item>
+        <item>14,8 дБ</item>
+        <item>15,6 дБ</item>
+        <item>16,3 дБ</item>
+        <item>17,0 дБ</item>
+    </string-array>
+    <string-array name="vbass_boost_values">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+        <item>550</item>
+        <item>600</item>
+    </string-array>
+    <string-array name="vclarity_mode">
+        <item>Естественный</item>
+        <item>OZone+</item>
+        <item>XHiFi</item>
+    </string-array>
+    <string-array name="vclarity_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="vclarity_boost">
+        <item>По умолчанию</item>
+        <item>3,5 дБ</item>
+        <item>6,0 дБ</item>
+        <item>8,0 дБ</item>
+        <item>10,0 дБ</item>
+        <item>11,0 дБ</item>
+        <item>12,0 дБ</item>
+        <item>13,0 дБ</item>
+        <item>14,0 дБ</item>
+        <item>14,8 дБ</item>
+    </string-array>
+    <string-array name="vclarity_boost_values">
+        <item>0</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+    </string-array>
     <string-array name="speaker_lowfreq">
         <item>100 Гц</item>
         <item>140 Гц</item>
@@ -417,7 +619,7 @@
         <item>200 Гц</item>
         <item>220 Гц</item>
     </string-array>
-	<string-array name="speaker_lowfreq_values">
+    <string-array name="speaker_lowfreq_values">
         <item>100</item>
         <item>140</item>
         <item>180</item>
@@ -432,7 +634,7 @@
         <item>7000 Гц</item>
         <item>8000 Гц</item>
     </string-array>
- <string-array name="speaker_highfreq_values">
+    <string-array name="speaker_highfreq_values">
         <item>3000</item>
         <item>4000</item>
         <item>5000</item>

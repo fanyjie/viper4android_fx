@@ -28,6 +28,7 @@
     <string name="pref_spkfx_limiter_title">Master Gate (Limiter)</string>
     <string name="pref_spkfx_limiter_threshold">Limit Threshold</string>
     <string name="pref_output_gain">Output Gain</string>
+    <string name="pref_output_pan">Channel Pan</string>
 
     <string name="pref_playback_title">Playback Gain Control</string>
     <string name="pref_playback_summary_on">PlaybackAGC is enabled</string>
@@ -41,6 +42,35 @@
     <string name="pref_xloud_output_amplifer">Output Gain</string>
     <string name="pref_xloud_spk_lowfreq">Low Response</string>
     <string name="pref_xloud_spk_highfreq">High Response</string>
+
+    <string name="pref_spk_opt_title">Speaker Optimization</string>
+    <string name="pref_spk_opt_summary_on">Speaker optimization is enabled</string>
+    <string name="pref_spk_opt_summary_off">Speaker optimization is disabled</string>
+
+    <string name="pref_viperddc_title">ViPER-DDC</string>
+    <string name="pref_viperddc_summary_on">ViPER-DDC is enabled</string>
+    <string name="pref_viperddc_summary_off">ViPER-DDC is disabled</string>
+    <string name="pref_viperddc_enable">Enable</string>
+    <string name="pref_viperddc_device">Listening Device</string>
+    <string name="pref_viperddc_device_manufacturer">Select Manufacturer</string>
+    <string name="pref_viperddc_device_model">Select Model</string>
+    <string name="pref_viperddc_tips">NOTICE:
+\nViPER-DDC is a true Hi-Fi audio processor and it is used for headset correction.
+\nViPER-DDC now supports nearly 500 headsets, and will continue to support more headphones.
+\nSo, if you can\'t find your headset in the list, please disable this feature for now.
+    </string>
+
+    <string name="pref_vse_title">Spectrum Extension</string>
+    <string name="pref_vse_summary_on">Spectrum extension is enabled</string>
+    <string name="pref_vse_summary_off">Spectrum extension is disabled</string>
+    <string name="pref_vse_enable">Enable</string>
+    <string name="pref_vse_strength">Strength</string>
+    <string name="pref_vse_strength_title">Select Strength</string>
+    <string name="pref_vse_tips">NOTICE:
+\nSpectrum extension is a true Hi-Fi audio processor and it is used for extending the lossy compressed spectrum.
+\nIf you are playing lossy compressed music(such mp3, aac, ogg), this feature may gives you a lossless feeling.
+\nBut if you are playing lossless music, we recommend you to disable this feature.
+    </string>
 
     <string name="pref_equalizer_title">FIREqualizer</string>
     <string name="pref_equalizer_summary_on">FIREqualizer is enabled</string>
@@ -95,8 +125,8 @@
     <string name="pref_vhs_summary_on">VHS+ is enabled</string>
     <string name="pref_vhs_summary_off">VHS+ is disabled</string>
     <string name="pref_vhs_enable">Enable</string>
-    <string name="pref_select_vhs_qual_title">Select Effect Quality</string>
-    <string name="dialog_vhs_qual">Effect Quality</string>
+    <string name="pref_select_vhs_qual_title">Select Effect Level</string>
+    <string name="dialog_vhs_qual">Effect Level</string>
 
     <string name="pref_colorfulmusic_title">Field Surround</string>
     <string name="pref_colorfulmusic_summary_on">Field surround is enabled</string>
@@ -107,6 +137,14 @@
     <string name="dialog_colorfulmusic">Field Surround Strength</string>
     <string name="pref_select_colorfulmusic_mi_title">Select Mid Image Strength</string>
     <string name="dialog_colorfulmusic_mi">Mid Image Strength</string>
+
+    <string name="pref_diffsurr_title">Differential Surround</string>
+    <string name="pref_diffsurr_summary_on">Diff surround is enabled</string>
+    <string name="pref_diffsurr_summary_off">Diff surround is disabled</string>
+    <string name="pref_diffsurr_enable">Enable</string>
+
+    <string name="pref_select_diffsurr_ms_title">Select Delay Time</string>
+    <string name="dialog_diffsurr_ms">Delay Time</string>
 
     <string name="pref_reverb_title">Reverberation</string>
     <string name="pref_reverb_summary_on">Reverberation is enabled</string>
@@ -142,6 +180,7 @@
     <string name="text_bluetooth">Bluetooth</string>
     <string name="text_speaker">Speaker</string>
     <string name="text_showtrayicon">Show Notification</string>
+    <string name="text_hidetrayicon">Hide Notification</string>
     <string name="text_lockeffect">Lock Effect Mode</string>
     <string name="text_yes">Yes</string>
     <string name="text_no">No</string>
@@ -161,31 +200,27 @@
     <string name="text_profileload_err">Can not load the profile.</string>
     <string name="text_rwsd_error">Can not read/write external storage.</string>
 
-    <string name="text_su_missing">Root permission (su binary) required.</string>
-
-    <string name="text_busybox_missing">Busybox not found.
-\nIn order to use ViPER4Android, you need to install busybox first.
-    </string>
-
     <string name="text_ok">OK</string>
     <string name="text_cancel">Cancel</string>
-    <string name="text_select_cpu">Please select your CPU</string>
+
+    <string name="text_drvinst_prefer">Please choose your preference</string>
+    <string name="text_drvinst_sqdrv">Super audio quality needs at least dual-core cpu and may speeds up battery drain.
+\nDo you want continue?
+    </string>
 
     <string name="text_drvvernotmatch">In order to use ViPER4Android, you need to install/update the V4A driver.
-\nThe installation process will be done automatically.
+\nThe installation procedure will be done automatically.
 \nInstall/update now?
     </string>
 
     <string name="text_drvuninst_confim">Do you really want to uninstall v4a driver?</string>
-
-    <string name="text_user_statistics">v4a.active</string>
 
     <string name="text_drv_blank"></string>
     <string name="text_uninstall">Uninstall Driver</string>
     <string name="text_install">Install Driver</string>
     <string name="text_drvinst_ok">Driver installed, please reboot your phone.</string>
     <string name="text_drvuninst_ok">Driver uninstalled, please reboot your phone.</string>
-    <string name="text_drvinst_failed">Driver install failed, please comfirm your phone has been rooted and busybox installed.</string>
+    <string name="text_drvinst_failed">Driver install failed, please confirm your phone has been rooted and busybox installed.</string>
 
     <string name="text_changelog">Changelog</string>
     <string name="text_drv_status">Driver Status</string>
@@ -198,7 +233,6 @@
 \nProcessing: %5$s
 \nType: %6$s
 \nSampling Rate: %7$d
-\nChannels: %8$d
 \n
     </string>
     <string name="text_service_error">Failed to communicate with ViPER4Android service.</string>

@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-  <string-array name="cpu_platform_fx">
-    <item>沒有VFP(PXA920)</item>
-    <item>帶有VFP的ARM</item>
-    <item>帶有NEON的A8</item>
-    <item>帶有NEON的A9/15</item>
-  </string-array>
-
-  <string-array name="cpu_platform_xhifi">
-    <item>英偉達圖睿2</item>
-    <item>帶有NEON的A系列</item>
+  <string-array name="drvinst_prefer">
+    <item>最高音質</item>
+    <item>高音質</item>
+    <item>省電優先</item>
   </string-array>
 
   <string-array name="colorfulmusic_coeffs">
     <item>輕微</item>
-    <item>中等</item>
+    <item>級別1</item>
+    <item>級別2</item>
+    <item>級別3</item>
+    <item>級別4</item>
+    <item>級別5</item>
+    <item>級別6</item>
+    <item>級別7</item>
     <item>極端</item>
   </string-array>
 
   <string-array name="colorfulmusic_midimage">
     <item>輕微</item>
-    <item>中等</item>
+    <item>級別1</item>
+    <item>級別2</item>
+    <item>級別3</item>
+    <item>級別4</item>
+    <item>級別5</item>
+    <item>級別6</item>
+    <item>級別7</item>
+    <item>級別8</item>
+    <item>級別9</item>
     <item>極端</item>
   </string-array>
 
@@ -74,8 +82,11 @@
   </string-array>
 
   <string-array name="vhs_qual">
-    <item>標準質量</item>
-    <item>高質量(消耗更多的CPU)</item>
+    <item>級別1</item>
+    <item>級別2</item>
+    <item>級別3</item>
+    <item>級別4</item>
+    <item>級別5</item>
   </string-array>
 
   <string-array name="playbackgain_ratio">
@@ -176,9 +187,6 @@
     <item>80％</item>
     <item>90％</item>
     <item>100％</item>
-    <item>120％</item>
-    <item>150％</item>
-    <item>200％</item>
   </string-array>
 
   <string-array name="dynamicsystem_outputs">
@@ -206,11 +214,15 @@
   <string-array name="vbass_mode">
     <item>自然低音</item>
     <item>醇低音+</item>
+    <item>低音炮</item>
   </string-array>
   <string-array name="vbass_freq">
+    <item>30 赫茲</item>
     <item>40 赫茲</item>
     <item>50 赫茲</item>
     <item>60 赫茲</item>
+    <item>66 赫茲</item>
+    <item>78 赫茲</item>
     <item>80 赫茲</item>
     <item>100 赫茲</item>
   </string-array>
@@ -232,8 +244,10 @@
   <string-array name="vclarity_mode">
     <item>自然處理</item>
     <item>醇氧+</item>
+    <item>XHiFi</item>
   </string-array>
   <string-array name="vclarity_boost">
+    <item>基礎調整</item>
     <item>3.5 分貝</item>
     <item>6.0 分貝</item>
     <item>8.0 分貝</item>

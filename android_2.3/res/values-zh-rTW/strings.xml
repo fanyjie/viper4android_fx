@@ -28,6 +28,7 @@
     <string name="pref_spkfx_limiter_title">總輸出門檻限制</string>
     <string name="pref_spkfx_limiter_threshold">輸出強度</string>
     <string name="pref_output_gain">輸出增益</string>
+    <string name="pref_output_pan">聲道平衡</string>
 
     <string name="pref_playback_title">播放增益控制</string>
     <string name="pref_playback_summary_on">播放增益控制已啟用</string>
@@ -41,6 +42,35 @@
     <string name="pref_xloud_output_amplifer">音量放大強度</string>
     <string name="pref_xloud_spk_lowfreq">低頻響應頻率</string>
     <string name="pref_xloud_spk_highfreq">高頻響應頻率</string>
+
+    <string name="pref_spk_opt_title">揚聲器優化</string>
+    <string name="pref_spk_opt_summary_on">揚聲器優化已啟用</string>
+    <string name="pref_spk_opt_summary_off">揚聲器優化已停用</string>
+
+    <string name="pref_viperddc_title">ViPER-DDC</string>
+    <string name="pref_viperddc_summary_on">ViPER-DDC已啟用</string>
+    <string name="pref_viperddc_summary_off">ViPER-DDC已停用</string>
+    <string name="pref_viperddc_enable">啟用</string>
+    <string name="pref_viperddc_device">監聽設備</string>
+    <string name="pref_viperddc_device_manufacturer">選擇耳機廠商</string>
+    <string name="pref_viperddc_device_model">選擇耳機型號</string>
+    <string name="pref_viperddc_tips">注意：
+\nViPER-DDC是一個用於耳機校正的HiFi音效。
+\n目前ViPER-DDC已經支援近500款耳機的校正，而且也將繼續支援更多的耳機。
+\n我們強烈建議您在列表中選擇精確對應您耳機型號的選項，這樣可以給您帶來最佳的音頻體驗。
+    </string>
+
+    <string name="pref_vse_title">頻譜擴展</string>
+    <string name="pref_vse_summary_on">頻譜擴展已啟用</string>
+    <string name="pref_vse_summary_off">頻譜擴展已停用</string>
+    <string name="pref_vse_enable">啟用</string>
+    <string name="pref_vse_strength">強度</string>
+    <string name="pref_vse_strength_title">選擇強度</string>
+    <string name="pref_vse_tips">注意：
+\n頻譜擴展是一個用於擴展有損壓縮的頻譜的HiFi音效。
+\n如果您經常播放有損壓縮的音樂(如mp3、aac和ogg等)，本功能可以給您一個接近無損的聽感。
+\n但如果您播放無損音樂，我們則建議您停用本功能。
+    </string>
 
     <string name="pref_equalizer_title">FIR等化器</string>
     <string name="pref_equalizer_summary_on">FIR等化器已啓用</string>
@@ -88,8 +118,8 @@
     <string name="pref_vhs_summary_on">耳機環繞核擎+ 已啟用</string>
     <string name="pref_vhs_summary_off">耳機環繞核擎+ 已停用</string>
     <string name="pref_vhs_enable">啟用</string>
-    <string name="pref_select_vhs_qual_title">選擇效果質量</string>
-    <string name="dialog_vhs_qual">效果質量</string>
+    <string name="pref_select_vhs_qual_title">選擇效果強度</string>
+    <string name="dialog_vhs_qual">效果強度</string>
 
     <string name="pref_colorfulmusic_title">臨場感模擬</string>
     <string name="pref_colorfulmusic_summary_on">臨場感模擬已啟用</string>
@@ -100,6 +130,14 @@
     <string name="dialog_colorfulmusic">臨場感模擬強度</string>
     <string name="pref_select_colorfulmusic_mi_title">選擇人聲強度</string>
     <string name="dialog_colorfulmusic_mi">人聲強度</string>
+
+    <string name="pref_diffsurr_title">差分環繞</string>
+    <string name="pref_diffsurr_summary_on">差分環繞已啟用</string>
+    <string name="pref_diffsurr_summary_off">差分環繞已停用</string>
+    <string name="pref_diffsurr_enable">啟用</string>
+
+    <string name="pref_select_diffsurr_ms_title">選擇延遲時間</string>
+    <string name="dialog_diffsurr_ms">延遲時間</string>
 
     <string name="pref_reverb_title">空間模擬</string>
     <string name="pref_reverb_summary_on">空間模擬已啟用</string>
@@ -135,6 +173,7 @@
     <string name="text_bluetooth">藍牙設備</string>
     <string name="text_speaker">揚聲器</string>
     <string name="text_showtrayicon">顯示通知欄圖標</string>
+    <string name="text_hidetrayicon">隱藏通知欄圖標</string>
     <string name="text_lockeffect">鎖定效果模式</string>
     <string name="text_yes">是</string>
     <string name="text_no">否</string>
@@ -154,15 +193,13 @@
     <string name="text_profileload_err">無法加載配置文件。</string>
     <string name="text_rwsd_error">無法讀寫外置存儲裝置。</string>
 
-    <string name="text_su_missing">ViPER4Android需要ROOT權限和su二進制程式，請確認已經安裝了最新的Superuser並對V4A進行了授權。</string>
-
-    <string name="text_busybox_missing">Busybox未找到。
-\n爲了正常使用ViPER4Android，需要安裝Busybox。
-    </string>
-
     <string name="text_ok">確定</string>
     <string name="text_cancel">取消</string>
-    <string name="text_select_cpu">請選擇CPU平臺</string>
+
+    <string name="text_drvinst_prefer">請選擇您的偏好</string>
+    <string name="text_drvinst_sqdrv">最高音質需要至少雙核的CPU，而且可能會加快電量消耗。
+\n您確定要繼續嗎？
+    </string>
 
     <string name="text_drvvernotmatch">爲了正常使用ViPER4Android音效，您需要安裝或更新V4A驅動程式。
 \n安裝或更新過程將會自動完成，卸載時可以使用菜單中的卸載驅動。
@@ -188,7 +225,6 @@
 \n正在處理: %5$s
 \n效果類型: %6$s
 \n取樣率: %7$d
-\n聲道數量: %8$d
 \n
     </string>
     <string name="text_service_error">無法和ViPER4Android背景服務建立連接，可能是無法加載驅動或背景服務程序已被殺死。</string>
